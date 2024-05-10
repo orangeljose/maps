@@ -20,3 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// LocationController
+Route::get('/api/map-marker', [App\Http\Controllers\Api\ApiMapController::class, 'mapMarker']);
